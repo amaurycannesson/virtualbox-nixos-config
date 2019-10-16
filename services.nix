@@ -18,6 +18,9 @@
         default = "i3";
         i3 = {
           enable = true;
+          extraSessionCommands = ''
+            xrdb -merge /etc/X11/Xresources
+          '';
         };
       };
       desktopManager = {

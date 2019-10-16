@@ -7,6 +7,9 @@ with lib;
       <nixpkgs/nixos/modules/virtualisation/virtualbox-image.nix>
       ./services.nix
       ./packages.nix
+      ./fonts.nix
+      ./programs.nix
+      ./environment.nix
       ./users.nix
     ];
   boot.loader.grub.fsIdentifier = "provided";
