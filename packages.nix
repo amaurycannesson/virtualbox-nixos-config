@@ -7,6 +7,7 @@ let
     zsh
     firefox
     glxinfo
+    feh
   ];
 in
 {

@@ -5,11 +5,11 @@ with lib;
 {
   imports = [ 
       <nixpkgs/nixos/modules/virtualisation/virtualbox-image.nix>
-      ./services.nix
       ./packages.nix
+      ./environment.nix
       ./fonts.nix
       ./programs.nix
-      ./environment.nix
+      ./services.nix
       ./users.nix
     ];
   boot.loader.grub.fsIdentifier = "provided";

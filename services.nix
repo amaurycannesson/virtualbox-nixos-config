@@ -18,6 +18,7 @@
         default = "i3";
         i3 = {
           enable = true;
+          configFile = ./config/i3;
           extraSessionCommands = ''
             xrdb -merge /etc/X11/Xresources
           '';
