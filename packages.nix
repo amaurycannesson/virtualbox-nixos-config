@@ -3,7 +3,6 @@
 let
   sysPkgs = with pkgs; [
     wget
-    vim
     zsh
     firefox
     glxinfo

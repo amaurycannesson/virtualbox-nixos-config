@@ -11,6 +11,7 @@ with lib;
       ./programs.nix
       ./services.nix
       ./users.nix
+      ./home.nix
     ];
   boot.loader.grub.fsIdentifier = "provided";
   powerManagement = {
