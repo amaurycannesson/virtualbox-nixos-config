@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -17,7 +17,7 @@ set $mod Mod1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono for Powerline 10
+font pango:DejaVu Sans Mono 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -47,7 +47,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+a kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu%'"
+bindsym $mod+d exec "dmenu_run -nf '#8796B0' -nb '#292D3E' -sb '#444267' -sf '#FFFFFF' -fn 'monospace-10' -p 'dmenu prompt &gt;'"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -176,25 +176,26 @@ bindsym $mod+r mode "resize"
 
 exec_always feh --bg-scale /etc/images/background.png
 
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.focused          #676E95 #676E95 #FFFFFF #676E95   #676E95
+client.focused_inactive #32374D #32374D #8796B0 #32374D   #32374D
+client.unfocused        #32374D #32374D #8796B0 #32374D   #32374D
+client.urgent           #FF5370 #FF5370 #FFFFFF #FF5370   #FF5370
+client.placeholder      #676E95 #676E95 #FFFFFF #676E95   #676E95
 
-client.background       #F8F8F2
+client.background       #292D3E
 
 bar {
-  status_command i3status
+  status_command i3status --config /etc/i3status/config
+  position top
   colors {
-    background #282A36
-    statusline #F8F8F2
-    separator  #44475A
+    background #292D3E
+    statusline #FFFFFF
+    separator  #FFFFFF
 
-    focused_workspace  #44475A #44475A #F8F8F2
-    active_workspace   #282A36 #44475A #F8F8F2
-    inactive_workspace #282A36 #282A36 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
+    focused_workspace  #62688E #656C93 #FFFFFF
+    active_workspace   #444267 #444267 #FFFFFF
+    inactive_workspace #32374D #32374D #8796B0
+    urgent_workspace   #FF5370 #FF5370 #FFFFFF
+    binding_mode       #FFCB6B #FFCB6B #FFFFFF
   }
 }

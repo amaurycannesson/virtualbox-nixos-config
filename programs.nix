@@ -13,10 +13,10 @@
       interactiveShellInit = ''
         export TERM="xterm-256color"
       '';
-      promptInit = "source ${pkgs.zsh-powerlevel9k}/share/zsh-powerlevel9k/powerlevel9k.zsh-theme";
+      promptInit = "source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme";
       ohMyZsh = {
         enable = true;
-        plugins = [ "git" ];
+        plugins = [ "git" "docker" ];
       };
     };
   };

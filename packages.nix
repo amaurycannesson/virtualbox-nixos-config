@@ -3,7 +3,10 @@
 let
   sysPkgs = with pkgs; [
     wget
-    zsh
+    tig
+    htop
+    zip
+    unzip
     firefox
     glxinfo
     feh
