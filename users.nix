@@ -5,6 +5,9 @@ let
   userDescription = "Amaury Cannesson";
 in
 {
+  time = {
+    timeZone = "Europe/Paris";
+  };
   i18n = {
     consoleKeyMap = "fr";
     defaultLocale = "fr_FR.UTF-8";
