@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  virtualisation = {
+    docker = {
+      enable = true;
+    };
+  };
   services = {
     xserver = {
       enable = true;

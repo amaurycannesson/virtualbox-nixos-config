@@ -8,6 +8,7 @@ let
     zip
     unzip
     firefox
+    neofetch
     glxinfo
     feh
   ];

@@ -19,6 +19,7 @@ in
         description = userDescription;
         extraGroups = [
           "wheel"
+          "docker"
           "vboxsf"
         ];
         shell = pkgs.zsh;
